@@ -1,0 +1,47 @@
+name: e_commerce
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  lottie: ^3.3.1
+  smooth_page_indicator: ^1.0.1
+  flutter_native_splash: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logo/light(2).png
+  color_dark: "#000000"
+  image_dark: assets/logo/dark.png
+  android_12:
+    color: "#ffffff"
+    image: assets/logo/light(2).png
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo/
+    - assets/animation/
+
+  fonts:
+    - family: 'Nunito'
+      fonts:
+        - asset: assets/fonts/Nunito-Light.ttf
+          weight: 300
+        
+        - asset: assets/fonts/Nunito-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-Bold.ttf
+          weight: 800
