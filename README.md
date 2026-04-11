@@ -23,7 +23,9 @@ This project is currently in development and focuses on clean UI, smooth onboard
 <img width="200" height="300" alt="onboarding_screen 1" src="https://github.com/user-attachments/assets/9cae97c8-ac29-4bd0-8c97-89ef81802bba" />
 
 assets/screenshots/onboarding1.png
+
 assets/screenshots/onboarding2.png
+
 assets/screenshots/onboarding3.png
 
 
@@ -36,6 +38,7 @@ Lottie Animations
 Smooth Page Indicato
 
 📂 Project Structure
+
 lib/
  └── features/
       └── authentication/
@@ -44,18 +47,25 @@ lib/
                 └── widgets/
 
 ⚙️ Installation
+
 Clone the repository:
+
 git clone https://github.com/Subhan-6/E_Commerce-App.git
+
 Navigate to project folder:
 
 cd E_Commerce-App
+
 Install dependencies:
 
 flutter pub get
+
 Run the app:
 
 flutter run
+
 🎯 Future Improvements
+
 🔐 Authentication (Login/Signup)
 
 🛍️ Product Listing
