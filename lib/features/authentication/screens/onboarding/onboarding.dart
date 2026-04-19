@@ -1,25 +1,23 @@
 
-import 'package:e_commerce/common/widgets/elevated_button.dart';
+import 'package:e_commerce/features/authentication/controller/onboarding/onboarding_controller.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_dot_navigator.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_skip_button.dart';
-import 'package:e_commerce/utils/constants/Text.dart';
+import 'package:e_commerce/utils/constants/text.dart';
 import 'package:e_commerce/utils/constants/images.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/device_helpers.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:get/get.dart';
 
 
 class OnboardingScreen extends StatelessWidget {
-  OnboardingScreen({super.key});
-
-  final PageController controller = PageController();
+  const OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+   final controller = Get.put(OnBoardingController());
+   
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: USizes.defaultSpace),
@@ -27,19 +25,20 @@ class OnboardingScreen extends StatelessWidget {
           children: [
            
             PageView(
-              controller: controller,
+              controller: controller.pageController,
+              onPageChanged: controller.updatePageIndicator,
               children: [
-                OnboardingPage(
+                const OnboardingPage(
                   animation: UImages.onboarding1Animation,
                   title: UText.onboarding1Title,
                   subtitle: UText.onboarding1Subtitle,
                 ),
-                OnboardingPage(
+                const OnboardingPage(
                   animation: UImages.onboarding2Animation,
                   title: UText.onboarding2Title,
                   subtitle: UText.onboarding2Subtitle,
                 ),
-                OnboardingPage(
+                const OnboardingPage(
                   animation: UImages.onboarding3Animation,
                   title: UText.onboarding3Title,
                   subtitle: UText.onboarding3Subtitle,
@@ -47,11 +46,11 @@ class OnboardingScreen extends StatelessWidget {
               ],
             ),
          //Dot NAvigator
-        OnboardingDotNavigator(controller: controller),
+        const OnboardingDotNavigator(),
         //Next Button Navigator
-        OnboardingNextButton(),
+        const OnboardingNextButton(),
         //Skip Button Navigator
-        OnboardingSkipButton(),
+        const OnboardingSkipButton(),
         
           ],
         ),
@@ -59,7 +58,3 @@ class OnboardingScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-
