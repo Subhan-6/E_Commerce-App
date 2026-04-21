@@ -1,4 +1,4 @@
-import 'package:e_commerce/common/widgets/elevated_button.dart';
+import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
 import 'package:e_commerce/features/authentication/controller/onboarding/onboarding_controller.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
