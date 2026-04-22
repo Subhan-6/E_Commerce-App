@@ -1,6 +1,9 @@
 
 import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
+import 'package:e_commerce/features/authentication/screens/sign_up/sign_up.dart';
 import 'package:e_commerce/utils/constants/text.dart';import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 
 import 'package:iconsax/iconsax.dart';
 
@@ -27,7 +30,7 @@ class LoginForm extends StatelessWidget {
      SizedBox(height:USizes.spaceBtwInputFields),
      // Password
      TextFormField(
-    decoration: InputDecoration(prefixIcon: Icon(Iconsax.lock),
+    decoration: InputDecoration(prefixIcon: Icon(Iconsax.password_check),
     labelText: UText.password,
     suffixIcon: Icon(Iconsax.eye),
     ),
@@ -61,8 +64,11 @@ class LoginForm extends StatelessWidget {
      SizedBox(height: USizes.spaceBtwItems/2),
      
      // create Account
-      UElevatedButton(onPressed: (){}, 
-     child: Text(UText.createAccount),)
+      SizedBox(
+        width : double.infinity,
+        child: OutlinedButton(onPressed: ()=> Get.to(()=>SignupScreen()), 
+             child: Text(UText.createAccount),),
+      )
       ],
     );
   }

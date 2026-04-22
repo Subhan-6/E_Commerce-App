@@ -1,3 +1,5 @@
+import 'dart:core';
+
 class UText{
   UText._();
 
@@ -18,4 +20,19 @@ static const String signIn = 'Sign In';
 static const String createAccount = 'Create Account';
 static const String forgetpassword = 'Forget Password?';
 static const String orSignInWith = 'Or Sign In With';
+// Sign Up Screen
+static const String  signupTitle   = 'Let’s Get You Registered';
+static const String   firstName  = 'First Name';
+static const String   lastName  = 'Last Name';
+static const String    phoneno = 'Phone Number';
+static const String    iagree = 'I agree to ';
+static const String   privacypolicy = ' Privacy Policy ';
+static const String    and = 'and ';
+static const String   Terms  = ' Terms of use';
+
+static const String   orSignupWith  = 'Or Sign up With';
+
+
+
+
 }
