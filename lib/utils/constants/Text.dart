@@ -20,6 +20,7 @@ static const String signIn = 'Sign In';
 static const String createAccount = 'Create Account';
 static const String forgetpassword = 'Forget Password?';
 static const String orSignInWith = 'Or Sign In With';
+
 // Sign Up Screen
 static const String  signupTitle   = 'Let’s Get You Registered';
 static const String   firstName  = 'First Name';
@@ -32,7 +33,16 @@ static const String   Terms  = ' Terms of use';
 
 static const String   orSignupWith  = 'Or Sign up With';
 
-
+// Forget Password Screen
+static const String forgetPassword = "Forget Password";
+static const String noWorries = "No worries! Enter your registered email address, and we’ll help you reset your password";
+static const String submit = "Submit";
+// Reset PasswordScreen
+static const String passwordreset = 'Password Reset Email Sent';
+static const String passwordresettext = 'We’ve sent a password reset link to your email. Please check your inbox and follow the instructions to reset your password';
+static const String unknownemail = 'unknownpro@gmail.com';
+static const String done = 'Done';
+static const String resendemail = 'Resend Email';
 
 
 }

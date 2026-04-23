@@ -50,4 +50,6 @@ class UDeviceHelper{
     return viewInsets.bottom;
   }
 
+  static getScreenWeight(BuildContext context) {}
+
 }

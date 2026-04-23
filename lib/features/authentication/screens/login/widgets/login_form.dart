@@ -1,5 +1,6 @@
 
 import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
+import 'package:e_commerce/features/authentication/screens/forgetpassword/forget_password.dart';
 import 'package:e_commerce/features/authentication/screens/sign_up/sign_up.dart';
 import 'package:e_commerce/utils/constants/text.dart';import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -49,7 +50,7 @@ class LoginForm extends StatelessWidget {
       // Forget Password
        Row(
         children: [
-     TextButton(onPressed: (){},
+     TextButton(onPressed: ()=> Get.to(()=>ForgetPassword()),
       child: Text(UText.forgetpassword), 
      
      )

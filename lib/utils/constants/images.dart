@@ -8,4 +8,6 @@ class UImages{
 
 static const  String facebookIcon =  'assets/logo/facebook-icon.png';
 static const String googleIcon = 'assets/logo/google_icon.png';
+// reset password
+static const String resetPassword = 'assets/logo/resetpassword.png';
 }
