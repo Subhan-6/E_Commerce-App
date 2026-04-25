@@ -43,6 +43,11 @@ static const String passwordresettext = 'We’ve sent a password reset link to y
 static const String unknownemail = 'unknownpro@gmail.com';
 static const String done = 'Done';
 static const String resendemail = 'Resend Email';
-
-
+// Verify Email Screen
+static const String verifyemail = 'Verify your email address!';
+static const  String Weve = 'We’ve sent a verification link to your email. Please check your inbox and click the link to verify your account';
+static const String continueb = 'Continue';
+// sucessful screen
+static const String accountsucessfully = 'Your account successfully created';
+static const String congratulation = 'Congratulations! Your account has been successfully created. You can now explore all the amazing features, start personalizing your experience, and enjoy seamless access to our services. Let’s get started!';
 }

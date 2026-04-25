@@ -1,5 +1,8 @@
+import 'package:e_commerce/features/authentication/screens/sign_up/verify_email.dart';
 import 'package:e_commerce/features/authentication/screens/sign_up/widghts/signup_form.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:e_commerce/common/style/padding.dart';
 import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
@@ -37,7 +40,7 @@ class SignupScreen extends StatelessWidget {
 
               /// Sign Up Button
               UElevatedButton(
-                onPressed: () {},
+                onPressed: ()=>Get.to(()=>VerifyEmail()),
                 child: Text(UText.createAccount),
               ),
 
