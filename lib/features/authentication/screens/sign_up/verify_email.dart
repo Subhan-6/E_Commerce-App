@@ -1,7 +1,7 @@
 import 'package:e_commerce/common/style/padding.dart';
 import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
 import 'package:e_commerce/features/authentication/screens/login/login.dart';
-import 'package:e_commerce/features/authentication/screens/sign_up/account_sucessful_screen.dart';
+import 'package:e_commerce/common/widgets/sucess_screen/account_sucessful_screen.dart';
 import 'package:e_commerce/utils/constants/Text.dart';
 import 'package:e_commerce/utils/constants/images.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -37,7 +37,12 @@ class VerifyEmail extends StatelessWidget {
              SizedBox(height:USizes.spaceBtwItems),
              Text(UText.Weve ,style: Theme.of(  context).textTheme.bodyMedium,),
              SizedBox(height:USizes.spaceBtwItems),
-             UElevatedButton(onPressed: ()=>Get.to(()=>AccountSucessfulScreen()), child: Text( UText.continueb)),
+             UElevatedButton(onPressed: ()=>Get.to(()=>AccountSucessfulScreen(
+              image: UImages.account,
+              title: UText.accountsucessfully,
+              subtitle: UText.congratulation, 
+              onTap: () {},
+             )), child: Text( UText.continueb)),
              SizedBox(height:USizes.spaceBtwItems),
              SizedBox(
              width: double.infinity,

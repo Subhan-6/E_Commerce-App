@@ -8,8 +8,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AccountSucessfulScreen extends StatelessWidget {
-  const AccountSucessfulScreen({super.key});
-
+  const AccountSucessfulScreen({super.key, required this.title, required this.subtitle, required this.image, required this.onTap});
+final String title, subtitle,image;
+final VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,17 +21,17 @@ class AccountSucessfulScreen extends StatelessWidget {
         child: Padding(padding: UPadding.screenPadding,
         child: Column(
           children: [
-          Image.asset(UImages.account, height: UDeviceHelper.getScreenWidth(context)*0.6,),
+          Image.asset(image, height: UDeviceHelper.getScreenWidth(context)*0.6,),
           SizedBox(height: USizes.spaceBtwSections),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
             
-          Text(UText.accountsucessfully, style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center ,),
+          Text(title, style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center ,),
           SizedBox(height: USizes.spaceBtwItems,),
-          Text(UText.congratulation, style: Theme.of(context).textTheme.bodyMedium, textAlign: TextAlign.center,),
+          Text(subtitle, style: Theme.of(context).textTheme.bodyMedium, textAlign: TextAlign.center,),
           SizedBox(height: USizes.spaceBtwSections,),
-          UElevatedButton(onPressed: (){}, child: Text(UText.continueb))
+          UElevatedButton(onPressed: onTap, child: Text(UText.continueb))
         ],)
         ],),
         

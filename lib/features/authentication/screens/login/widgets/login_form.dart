@@ -2,6 +2,7 @@
 import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
 import 'package:e_commerce/features/authentication/screens/forgetpassword/forget_password.dart';
 import 'package:e_commerce/features/authentication/screens/sign_up/sign_up.dart';
+import 'package:e_commerce/navigation_menu.dart';
 import 'package:e_commerce/utils/constants/text.dart';import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -60,7 +61,7 @@ class LoginForm extends StatelessWidget {
     ) ,    
      SizedBox(height: USizes.spaceBtwSections),
      // Sign In    
-     UElevatedButton(onPressed: (){}, 
+     UElevatedButton(onPressed: ()=>Get.to(()=>NavigationScreen()), 
      child: Text(UText.signIn),),
      SizedBox(height: USizes.spaceBtwItems/2),
      
