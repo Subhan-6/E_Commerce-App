@@ -1,9 +1,6 @@
-import 'package:e_commerce/features/authentication/screens/login/login.dart';
-import 'package:e_commerce/features/authentication/screens/sign_up/sign_up.dart';
 import 'package:e_commerce/features/authentication/shop/screen/home/home.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

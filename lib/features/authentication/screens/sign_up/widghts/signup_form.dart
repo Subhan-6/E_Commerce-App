@@ -1,6 +1,5 @@
 import 'package:e_commerce/features/authentication/screens/sign_up/widghts/privacy_policy_check.dart';
 import 'package:e_commerce/utils/constants/Text.dart';
-import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';

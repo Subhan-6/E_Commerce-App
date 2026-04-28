@@ -1,7 +1,7 @@
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../../utils/helpers/device_helpers.dart';
+
 
 class UCircularContainer extends StatelessWidget {
   const UCircularContainer({
