@@ -34,8 +34,10 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/icons/categories/
     - assets/logo/
     - assets/animation/
+    
   fonts:
     - family: 'Nunito'
       fonts:

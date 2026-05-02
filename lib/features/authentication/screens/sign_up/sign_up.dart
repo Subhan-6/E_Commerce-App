@@ -7,7 +7,7 @@ import 'package:e_commerce/common/style/padding.dart';
 import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
 import 'package:e_commerce/common/widgets/buttons/social_buttons.dart';
 import 'package:e_commerce/common/widgets/login_signup/form_divider.dart';
-import 'package:e_commerce/utils/constants/Text.dart';
+import 'package:e_commerce/utils/constants/text.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 
 class SignupScreen extends StatelessWidget {

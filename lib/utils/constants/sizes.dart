@@ -61,4 +61,5 @@ class USizes{
 
   static const double brandCardWidth = 170.0; // 170
   static const double brandCardHeight = 70.0; // 70
-}
+  static const double primaryHeaderHeight = 320.0;
+  }

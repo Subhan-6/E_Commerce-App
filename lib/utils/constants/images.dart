@@ -12,5 +12,7 @@ static const String googleIcon = 'assets/logo/google_icon.png';
 static const String resetPassword = 'assets/logo/resetpassword.png';
 // account created sucessful screen
 static const String account = 'assets/logo/account.png';
+// categories images
+static const String sports = 'assets/icons/categories/sports.png';
 }
 

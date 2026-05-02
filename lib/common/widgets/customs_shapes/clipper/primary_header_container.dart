@@ -21,7 +21,7 @@ class UPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return  URoundedEdges(
       child: Container(
-          height: height,
+          height: USizes.primaryHeaderHeight,
           color: UColors.primary,
           child: Stack(
             children: [
@@ -31,8 +31,8 @@ class UPrimaryHeaderContainer extends StatelessWidget {
                 top: -150,
                 right: -160,
                 child: UCircularContainer(
-                  height: USizes.homePrimaryHeaderHeight,
-                  width: USizes.homePrimaryHeaderHeight,
+                  height: USizes.primaryHeaderHeight,
+                  width: USizes.primaryHeaderHeight,
                   backgroundColor: UColors.white.withValues(alpha: 0.1)
                 ),
               ),
@@ -42,8 +42,8 @@ class UPrimaryHeaderContainer extends StatelessWidget {
                   top: 50,
                   right: -250,
                   child: UCircularContainer(
-                    height: USizes.homePrimaryHeaderHeight,
-                    width: USizes.homePrimaryHeaderHeight,
+                    height: USizes.primaryHeaderHeight,
+                    width: USizes.primaryHeaderHeight,
                     backgroundColor: UColors.white.withValues(alpha: 0.1),
                   )
               ),

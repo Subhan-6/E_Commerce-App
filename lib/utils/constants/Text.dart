@@ -50,4 +50,11 @@ static const String continueb = 'Continue';
 // sucessful screen
 static const String accountsucessfully = 'Your account successfully created';
 static const String congratulation = 'Congratulations! Your account has been successfully created. You can now explore all the amazing features, start personalizing your experience, and enjoy seamless access to our services. Let’s get started!';
+// home screen
+static const String goodmorning = 'Good Morning';
+static const String unknownpro = 'Unknown Pro';
+
+static const String searchinStore = 'Search in Store';
+static const String popularCategories = 'Popular Categories';
+static const String sport = 'Sports Categories';
 }
