@@ -30,4 +30,6 @@ static const Color grey = Color(0xFFE0E0E0);
 static const Color lightGrey = Color(0xFFF9F9F9);
 static const Color white = Color(0xFFFFFFFF);
   static const Color darkGrey = Color(0xFF939393);
+
+  static const Color yellow = Color(0x80FFC107);
 }

@@ -53,8 +53,9 @@ static const String congratulation = 'Congratulations! Your account has been suc
 // home screen
 static const String goodmorning = 'Good Morning';
 static const String unknownpro = 'Unknown Pro';
-
 static const String searchinStore = 'Search in Store';
 static const String popularCategories = 'Popular Categories';
+// categories text
 static const String sport = 'Sports Categories';
+static const String bag = 'Bags';
 }

@@ -3,8 +3,8 @@ import 'package:e_commerce/utils/constants/text.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
 
-class privacy_policy_checkbox extends StatelessWidget {
-  const privacy_policy_checkbox({
+class privacyPolicyCheckbox extends StatelessWidget {
+  const privacyPolicyCheckbox({
     super.key,
   });
 

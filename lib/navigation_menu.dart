@@ -19,7 +19,7 @@ class NavigationScreen extends StatelessWidget {
         () => NavigationBar(
             elevation: 0,
             backgroundColor: dark ? UColors.dark : UColors.light,
-            indicatorColor: dark ? UColors.dark : UColors.light,
+            indicatorColor: dark ? UColors.light : UColors.darkerGrey,
             selectedIndex: controller.selectedIndex.value,
             onDestinationSelected: (index) {
               controller.selectedIndex.value = index;

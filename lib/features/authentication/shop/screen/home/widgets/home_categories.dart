@@ -38,8 +38,8 @@ class UhomeCategories extends StatelessWidget {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return UVerticalImageText(
-                    title: UText.sport,
-                    image: UImages.sports,
+                    title: UText.bag,
+                    image: UImages.bag,
                     backgroundColor: UColors.white,
                     textcolor: UColors.white,
                   );

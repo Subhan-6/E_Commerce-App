@@ -5,8 +5,8 @@ import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class Search_bar extends StatelessWidget {
-  const Search_bar({
+class Searchbar extends StatelessWidget {
+  const Searchbar({
     super.key,
   });
 

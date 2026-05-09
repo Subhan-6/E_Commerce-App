@@ -1,3 +1,4 @@
+
 import 'package:e_commerce/features/authentication/screens/sign_up/widghts/privacy_policy_check.dart';
 import 'package:e_commerce/utils/constants/text.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -70,7 +71,7 @@ class Signupform extends StatelessWidget {
     SizedBox(height: USizes.spaceBtwInputFields / 2),
     
     /// Terms & Conditions
-    privacy_policy_checkbox(),
+    privacyPolicyCheckbox(),
     ],
     );
   }
