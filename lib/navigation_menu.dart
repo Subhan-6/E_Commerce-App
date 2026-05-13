@@ -1,4 +1,5 @@
 import 'package:e_commerce/features/authentication/shop/screen/home/home.dart';
+import 'package:e_commerce/features/authentication/shop/screen/store/store.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
@@ -37,5 +38,5 @@ class NavigationScreen extends StatelessWidget {
 
 class NavigatorController extends GetxController {
   RxInt selectedIndex = 0.obs;
-  List<Widget> screens = [HomeScreen()];
+  List<Widget> screens = [HomeScreen(), StoreScreen(), Container(), Container()];
 }

@@ -1,0 +1,35 @@
+import 'package:e_commerce/utils/constants/enums.dart';
+import 'package:flutter/material.dart';
+class UBrand_Title_Text extends StatelessWidget {
+  const UBrand_Title_Text({
+    super.key,
+    required this.title,
+    this.color,
+    this.textAlign = TextAlign.center,
+     this.brandTextSize = TextSizes.small,
+     this.maxLines = 1,
+  });
+  final int maxLines;
+  final String title;
+  final Color? color;
+  final TextAlign? textAlign;
+  final TextSizes brandTextSize;
+  @override
+  // ignore: non_constant_identifier_names
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(title,
+            textAlign: textAlign,
+            maxLines: maxLines,
+            overflow: TextOverflow.ellipsis,
+            style: brandTextSize == TextSizes.small? Theme.of(context).textTheme.labelMedium!.apply(color: color)
+            : brandTextSize == TextSizes.medium ? Theme.of(context).textTheme.bodyLarge!.apply(color: color)
+            :brandTextSize == TextSizes.large ? Theme.of(context).textTheme.titleLarge!.apply(color: color)
+            :
+            Theme.of(context).textTheme.bodyMedium!.apply(color: color),
+            ),
+      ],
+    );
+  }
+}

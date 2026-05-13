@@ -12,7 +12,6 @@ import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -30,9 +29,9 @@ final controller = Get.put(HomeController());
           // upper part
           Stack(
             children: [
-              SizedBox(height: USizes.primaryHeaderHeight + 10),
+              SizedBox(height: USizes.homePrimaryHeaderHeight + 10),
               UPrimaryHeaderContainer(
-                height: USizes.primaryHeaderHeight,
+                height: USizes.homePrimaryHeaderHeight,
                 child: Column(
                   children: [
                     HomeAppBar(dark: dark),

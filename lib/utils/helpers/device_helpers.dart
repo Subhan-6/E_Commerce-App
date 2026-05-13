@@ -52,4 +52,6 @@ class UDeviceHelper{
 
   static getScreenWeight(BuildContext context) {}
 
+  static isDarkMode(BuildContext context) {}
+
 }

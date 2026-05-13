@@ -1,7 +1,7 @@
 import 'package:e_commerce/common/style/shadow.dart';
+import 'package:e_commerce/common/widgets/Text/brand_title_with_verify.dart';
 import 'package:e_commerce/common/widgets/Text/product_price.dart';
 import 'package:e_commerce/common/widgets/Text/product_title_text.dart';
-
 import 'package:e_commerce/common/widgets/customs_shapes/rounded_container.dart';
 import 'package:e_commerce/common/widgets/icons/circular_icons.dart';
 import 'package:e_commerce/common/widgets/image/rounded_image.dart';
@@ -16,6 +16,7 @@ class UProductCard extends StatelessWidget {
   const UProductCard({
     super.key,
   });
+
 
   @override
   Widget build(BuildContext context) {
@@ -77,56 +78,41 @@ class UProductCard extends StatelessWidget {
                   ),
                   SizedBox(height: USizes.spaceBtwItems / 2),
                   // brand name
-                  Row(
-                    children: [
-                      Text('Bata',
-                          style: Theme.of(context).textTheme.labelMedium,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis),
-                      SizedBox(width: USizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: UColors.primary,
-                        size: USizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  UBrand_title_with_verify(title: 'bata'),
                   SizedBox(height: USizes.spaceBtwItems / 2),
-               
-                  
                 ],
               ),
             ),
-         Spacer(),
-         Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: USizes.sm),
-                        child: UProductPrice(price: '76'),
-                      ),
-                      SizedBox(width: USizes.xs),
-                      Container(
-                        width: USizes.iconLg * 1.2,
-                        height: USizes.iconLg * 1.2,
-                        decoration: BoxDecoration(
-                            color: UColors.primary,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(USizes.cardRadiusMd),
-                              bottomRight:
-                                  Radius.circular(USizes.productImageRadius),
-                            )),
-                        child: IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Iconsax.add,
-                              color: UColors.white,
-                              size: USizes.iconMd,
-                            )),
-                      )
-                    ],
-                  )
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: USizes.sm),
+                  child: UProductPrice(price: '76'),
+                ),
+                SizedBox(width: USizes.xs),
+                Container(
+                  width: USizes.iconLg * 1.2,
+                  height: USizes.iconLg * 1.2,
+                  decoration: BoxDecoration(
+                      color: UColors.primary,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(USizes.cardRadiusMd),
+                        bottomRight: Radius.circular(USizes.productImageRadius),
+                      )),
+                  child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Iconsax.add,
+                        color: UColors.white,
+                        size: USizes.iconMd,
+                      )),
+                )
+              ],
+            )
           ])),
     );
   }
 }
+
