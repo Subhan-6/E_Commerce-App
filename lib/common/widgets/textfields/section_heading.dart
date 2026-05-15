@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class USectionHeading extends StatelessWidget {
   const USectionHeading({
-    super.key, required this.title,  this.buttonTitle = 'View All', this.onPressed,
+    super.key, required this.title,  this.buttonTitle = 'View All', this.onPressed,  this.showActionButton = true,
   });
+  final bool showActionButton ;
 final String title,buttonTitle;
 final VoidCallback ?onPressed;
   @override
@@ -12,7 +13,7 @@ final VoidCallback ?onPressed;
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
       Text(title , style: Theme.of(context).textTheme.headlineSmall,maxLines: 1 ,overflow: TextOverflow.ellipsis,),
-      TextButton(onPressed: (){}, child: Text(buttonTitle)),
+      if (showActionButton) TextButton(onPressed: (){}, child: Text(buttonTitle)),
     ],);
   }
 }

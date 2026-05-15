@@ -58,7 +58,7 @@ final controller = Get.put(HomeController());
                 SizedBox(height: USizes.spaceBtwItems/2),
                 // product grid & product card
                 UGridLayout(
-                  mainAxisCount: 288,
+                  mainAxisExtent: 288,
                   itemCount: 6,
                   itemBuilder: (context,index){
                     return UProductCard();

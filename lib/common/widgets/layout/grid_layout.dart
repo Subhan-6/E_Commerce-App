@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class UGridLayout extends StatelessWidget {
   const UGridLayout({
-    super.key, required this.itemCount, required this.mainAxisCount, required this.itemBuilder,
+    super.key, required this.itemCount, required this.mainAxisExtent, required this.itemBuilder,
   });
 final int itemCount;
-final double mainAxisCount;
+final double mainAxisExtent;
 final Widget Function(BuildContext, int index) itemBuilder;
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ final Widget Function(BuildContext, int index) itemBuilder;
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
       crossAxisSpacing: USizes.gridViewSpacing,
       mainAxisSpacing: USizes.gridViewSpacing,
-      mainAxisExtent: mainAxisCount,
+      mainAxisExtent: mainAxisExtent,
       ), 
       itemBuilder: (context, index) {
         return UProductCard();

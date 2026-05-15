@@ -20,7 +20,7 @@ class StoreScreen extends StatelessWidget {
             return [
               SliverAppBar(
                 automaticallyImplyLeading: false,
-                expandedHeight: 300,
+                expandedHeight: 340,
                 pinned: true,
                 floating: false,
                 flexibleSpace: SingleChildScrollView(
@@ -44,7 +44,9 @@ class StoreScreen extends StatelessWidget {
                                 itemCount: 10,
                                 shrinkWrap: true,
                                 scrollDirection: Axis.horizontal,
-                                itemBuilder: (context, index) => UBrandCard(),
+                                itemBuilder: (context, index) => SizedBox(
+                                        width: USizes.brandCardWidth,
+                                  child: UBrandCard()),
                                 separatorBuilder: (context, index) =>
                                     SizedBox(width: USizes.spaceBtwItems / 2),
                               ),
@@ -76,7 +78,6 @@ class StoreScreen extends StatelessWidget {
             ];
           },
           body: TabBarView(children: [
-            UCategoryTab(dark: dark),
             UCategoryTab(dark: dark),
             UCategoryTab(dark: dark),
             UCategoryTab(dark: dark),

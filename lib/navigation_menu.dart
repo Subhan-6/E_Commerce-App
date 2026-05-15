@@ -1,5 +1,7 @@
 import 'package:e_commerce/features/authentication/shop/screen/home/home.dart';
+import 'package:e_commerce/features/personalization/Screens/profile.dart';
 import 'package:e_commerce/features/authentication/shop/screen/store/store.dart';
+import 'package:e_commerce/features/authentication/shop/screen/wish_llist/wish_list.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +39,7 @@ class NavigationScreen extends StatelessWidget {
 }
 
 class NavigatorController extends GetxController {
+  static NavigatorController get instance => Get.find();
   RxInt selectedIndex = 0.obs;
-  List<Widget> screens = [HomeScreen(), StoreScreen(), Container(), Container()];
+  List<Widget> screens = [HomeScreen(), StoreScreen(), WishListScreen(),ProfileScreen()];
 }

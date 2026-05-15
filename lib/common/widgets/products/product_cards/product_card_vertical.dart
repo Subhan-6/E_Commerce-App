@@ -24,7 +24,7 @@ class UProductCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-          width: 180,
+          width:   180,
           padding: const EdgeInsets.all(1),
           decoration: BoxDecoration(
             boxShadow: UShadow.verticalProductShadow,
@@ -33,13 +33,13 @@ class UProductCard extends StatelessWidget {
           child: Column(children: [
             // Thumbnail, favorite icon , tag ,
             URoundedContainer(
-              width: 180,
+              height:  180,
               padding: const EdgeInsets.all(USizes.sm),
               backgroundColor: dark ? UColors.dark : UColors.light,
               child: Stack(
                 children: [
                   // thumbnail
-                  URoundedImages(imageUrl: UImages.product15),
+                  Center(child: URoundedImages(imageUrl: UImages.product15)),
                   // dicount tag
                   Positioned(
                     top: 12.0,

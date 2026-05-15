@@ -32,8 +32,8 @@ static const String product15 = 'assets/products/product 15.png';
 static const String bata = 'assets/brands/bata.png';
 static const String apple = 'assets/brands/apple.png';
 static const String adidas = 'assets/brands/adidas.png';
-
-
+// profile logo
+static const String profileLogo = 'assets/logo/profile.png';
 
 }
 

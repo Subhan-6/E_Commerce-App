@@ -53,7 +53,7 @@ class UCategoryTab extends StatelessWidget {
               // grid layout
               UGridLayout(
                 itemCount: 4,
-                mainAxisCount: 288,
+                mainAxisExtent: 288,
                 itemBuilder: (context, index) {
                   return UProductCard();
                 },

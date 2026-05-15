@@ -14,9 +14,9 @@ final showBorder;
   @override
   Widget build(BuildContext context) {
     return URoundedContainer(
+      
       height: USizes.brandCardHeight,
-      width: USizes.brandCardWidth,
-      showBorder: showBorder,
+       showBorder: showBorder,
       backgroundColor: Colors.transparent,
       padding: const EdgeInsets.all(USizes.sm),
       child: Row(
