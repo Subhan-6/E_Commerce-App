@@ -1,5 +1,5 @@
 import 'package:e_commerce/features/authentication/shop/screen/home/home.dart';
-import 'package:e_commerce/features/personalization/Screens/profile.dart';
+import 'package:e_commerce/features/personalization/Screens/profile/profile.dart';
 import 'package:e_commerce/features/authentication/shop/screen/store/store.dart';
 import 'package:e_commerce/features/authentication/shop/screen/wish_llist/wish_list.dart';
 import 'package:e_commerce/utils/constants/colors.dart';

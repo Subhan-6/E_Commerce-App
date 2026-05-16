@@ -1,4 +1,5 @@
 import 'package:e_commerce/common/widgets/image/circular_images.dart';
+import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +15,7 @@ class Uprofilelogo extends StatelessWidget {
       height: 120,
       width: 120,
       borderWidth: 5.0,
+      borderColor: UColors.primary,
       padding: 0,
     );
   }
