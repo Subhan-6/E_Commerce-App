@@ -11,7 +11,7 @@ final TextAlign textAlign ;
 
   @override
   Widget build(BuildContext context) {
-    return Text(title,style:smallSize? Theme.of(context).textTheme.labelLarge:Theme.of(context).textTheme.titleSmall ,maxLines: maxlines ,textAlign: textAlign,);
+    return Text(title,style:smallSize? Theme.of(context).textTheme.titleSmall:Theme.of(context).textTheme.titleLarge ,maxLines: maxlines ,textAlign: textAlign,);
   }
 }
 
