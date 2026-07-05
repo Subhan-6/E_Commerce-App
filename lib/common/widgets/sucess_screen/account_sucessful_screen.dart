@@ -6,7 +6,7 @@ import 'package:e_commerce/utils/helpers/device_helpers.dart';
 import 'package:flutter/material.dart';
 
 class AccountSucessfulScreen extends StatelessWidget {
-  const AccountSucessfulScreen({super.key, required this.title, required this.subtitle, required this.image, required this.onTap});
+const AccountSucessfulScreen({super.key, required this.title, required this.subtitle, required this.image, required this.onTap});
 final String title, subtitle,image;
 final VoidCallback onTap;
   @override

@@ -1,19 +1,26 @@
+import 'package:e_commerce/common/style/padding.dart';
 import 'package:e_commerce/common/widgets/Text/brand_title_with_verify.dart';
 import 'package:e_commerce/common/widgets/Text/brands_tiltle_text.dart';
 import 'package:e_commerce/common/widgets/Text/product_price.dart';
 import 'package:e_commerce/common/widgets/Text/product_title_text.dart';
 import 'package:e_commerce/common/widgets/appbar/appbar.dart';
+import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
 import 'package:e_commerce/common/widgets/customs_shapes/rounded_container.dart';
 import 'package:e_commerce/common/widgets/icons/circular_icons.dart';
 import 'package:e_commerce/common/widgets/image/circular_images.dart';
 import 'package:e_commerce/common/widgets/image/rounded_image.dart';
+import 'package:e_commerce/common/widgets/textfields/section_heading.dart';
+import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/UProductDetails.dart';
 import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/Uproductthumbnai_sliderimage.dart';
+import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/bottom_add_to_cart.dart';
+import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/product_attributes.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:readmore/readmore.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   const ProductDetailScreen({super.key});
@@ -24,78 +31,47 @@ class ProductDetailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            // thumbnail image & slider
             UProductThumbnailSliderimage(),
-            // tag & price & share button
+            // -----[Product detils]-----
             Padding(
-              padding: const EdgeInsets.all(USizes.defaultSpace),
+              padding: UPadding.screenPadding,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      URoundedContainer(
-                        radius: USizes.sm,
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: USizes.sm, vertical: USizes.xs),
-                        backgroundColor: UColors.yellow.withValues(alpha: 0.8),
-                        child: Text(
-                          '20%',
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge!
-                              .apply(color: UColors.black),
-                        ),
-                      ),
-                      SizedBox(width: USizes.spaceBtwItems),
-                      // price
-                      Text(
-                        '\$399',
-                        style: Theme.of(context)
-                            .textTheme
-                            .titleMedium!
-                            .apply(decoration: TextDecoration.lineThrough),
-                      ),
-                      SizedBox(width: USizes.spaceBtwItems),
-                      UProductPrice(price: '250'),
-                      Spacer(),
-                      // share button
-                      IconButton(onPressed: () {}, icon: Icon(Icons.share))
-                    ],
-                  ),
-                  // product title
+                  // tag & price & share button
+                  UProductDetails(),
+                  // product attributes
+                  UProductAttributes(),
+                  SizedBox(height: USizes.spaceBtwSections),
+                  // Checkout button
+                  UElevatedButton(onPressed: () {}, child: Text('Check Out')),
+                  SizedBox(height: USizes.spaceBtwSections),
+                  // Descrition
+                  USectionHeading(
+                      title: 'Discreption', showActionButton: false),
                   SizedBox(height: USizes.spaceBtwItems / 1.5),
-                  UProductTitleText(
-                    title: 'Nike Air Max ',
+                  ReadMoreText(
+                    'This is a product description of BATA brand shoes. There are more things that can be added but I’m,This is a product description of BATA brand shoes. There are more things that can be added but I’m... show more',
+                    trimLines: 2,
+                    trimCollapsedText: 'ShowMore',
+                    trimMode: TrimMode.Line,
+                    trimExpandedText: ' Less',
+                    moreStyle:
+                        TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+                    lessStyle:
+                        TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
                   ),
-                  SizedBox(height: USizes.spaceBtwItems / 1.5),
-                  //  product status
-                  Row(
-                    children: [
-                      UProductTitleText(
-                        title: 'Status',smallSize: true,
-                      ),
-                      SizedBox(width: USizes.spaceBtwItems / 1.5),
-                      Text('In Stock',
-                          style: Theme.of(context).textTheme.titleLarge),
+                  SizedBox(height: USizes.spaceBtwSections),
+              
 
-                    ],
-                  ),
-                  SizedBox(height: USizes.spaceBtwItems / 1.5),
-                  // brand image & name with verify button
-                  Row(
-                    children: [
-                      UCircularImage(image: UImages.bata,height: 32.0,width: 32.0,padding: 0,),
-                        SizedBox(width: USizes.spaceBtwItems/1.5),
-                        UBrand_title_with_verify(title: 'Bata')
-                    ],
-                  ),
                 ],
               ),
             )
           ],
         ),
       ),
+      bottomNavigationBar:  BottomAddToCart(),
+
     );
   }
 }
-

@@ -27,7 +27,7 @@ class UProductThumbnailSliderimage extends StatelessWidget {
             height: 400,
             child: Padding(
               padding:
-                  const EdgeInsets.all(USizes.productImageRadius * 2),
+                  const EdgeInsets.all(USizes.productImageRadius* 2),
               child: Center(
                   child: Image(image: AssetImage(UImages.product10))),
             )),

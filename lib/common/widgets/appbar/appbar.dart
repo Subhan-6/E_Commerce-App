@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class UAppBar extends StatelessWidget implements PreferredSizeWidget{
-  const UAppBar({super.key, this.title, this.showBackArrow = false, this.leadingIcon, this.actions, this.leadingOnPressed});
+  const UAppBar({super.key, this.title, this.showBackArrow = false, this.leadingIcon, this.actions, this.leadingOnPressed, TextStyle? style});
   
 final Widget? title;
 final bool showBackArrow;
