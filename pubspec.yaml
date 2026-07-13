@@ -42,6 +42,7 @@ flutter:
     - assets/banners/
     - assets/products/
     - assets/brands/
+    - assets/icons/payment/
     
   fonts:
     - family: 'Nunito'

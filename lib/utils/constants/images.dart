@@ -34,6 +34,13 @@ static const String apple = 'assets/brands/apple.png';
 static const String adidas = 'assets/brands/adidas.png';
 // profile logo
 static const String profileLogo = 'assets/logo/profile.png';
+// Payment Methods
+static const String mastercard = 'assets/icons/payment/master-card.png';
+static const String applepay = 'assets/icons/payment/apple-pay.png';
+static const String googlepay = 'assets/icons/payment/google.png';
+static const String creditcard = 'assets/icons/payment/credit-card.png';
+static const String successfulPaymentIcon = 'assets/icons/payment/successful_payment_icon.png';
+
 
 }
 
