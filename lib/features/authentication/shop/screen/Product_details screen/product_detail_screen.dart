@@ -1,25 +1,13 @@
 import 'package:e_commerce/common/style/padding.dart';
-import 'package:e_commerce/common/widgets/Text/brand_title_with_verify.dart';
-import 'package:e_commerce/common/widgets/Text/brands_tiltle_text.dart';
-import 'package:e_commerce/common/widgets/Text/product_price.dart';
-import 'package:e_commerce/common/widgets/Text/product_title_text.dart';
-import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/common/widgets/buttons/elevated_button.dart';
-import 'package:e_commerce/common/widgets/customs_shapes/rounded_container.dart';
-import 'package:e_commerce/common/widgets/icons/circular_icons.dart';
-import 'package:e_commerce/common/widgets/image/circular_images.dart';
-import 'package:e_commerce/common/widgets/image/rounded_image.dart';
 import 'package:e_commerce/common/widgets/textfields/section_heading.dart';
 import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/UProductDetails.dart';
 import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/Uproductthumbnai_sliderimage.dart';
 import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/bottom_add_to_cart.dart';
 import 'package:e_commerce/features/authentication/shop/screen/Product_details%20screen/widgets/product_attributes.dart';
-import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
 class ProductDetailScreen extends StatelessWidget {

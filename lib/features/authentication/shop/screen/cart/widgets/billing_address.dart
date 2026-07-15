@@ -1,9 +1,7 @@
-import 'package:e_commerce/common/widgets/customs_shapes/rounded_container.dart';
 import 'package:e_commerce/common/widgets/textfields/section_heading.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class UBillingAdress extends StatelessWidget {
   const UBillingAdress({super.key});

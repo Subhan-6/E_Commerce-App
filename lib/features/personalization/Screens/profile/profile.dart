@@ -1,6 +1,6 @@
 import 'package:e_commerce/common/widgets/textfields/section_heading.dart';
+import 'package:e_commerce/features/authentication/shop/screen/Order/order.dart';
 import 'package:e_commerce/features/personalization/Screens/address/address.dart';
-import 'package:e_commerce/features/personalization/Screens/address/address_new.dart';
 import 'package:e_commerce/features/personalization/Screens/profile/widgets/uprofileheader.dart';
 import 'package:e_commerce/features/personalization/Screens/profile/widgets/uprofilesettingtile.dart';
 import 'package:e_commerce/features/personalization/Screens/profile/widgets/uprofiletext.dart';
@@ -46,7 +46,7 @@ class ProfileScreen extends StatelessWidget {
                       icon: Iconsax.shopping_cart),
                   // My orders
                   UProfileSettingtile(
-                    onTap: (){},
+                    onTap: ()=>Get.to(()=>UOrderScreen()),
                       title: 'My Orders',
                       subtitle:
                           'View your order history and tracking information',

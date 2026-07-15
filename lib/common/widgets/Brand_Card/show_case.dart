@@ -37,10 +37,6 @@ final List<String> images;
     );
   }
 }
-
-
-
-  @override
   Widget buildBrandImage(bool dark,String image) {
     return Expanded(
       child: URoundedContainer(
