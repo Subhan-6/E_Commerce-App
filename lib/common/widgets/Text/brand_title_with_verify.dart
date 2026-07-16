@@ -34,7 +34,7 @@ class UBrand_title_with_verify extends StatelessWidget {
           brandTextSize: brandTextSize,
         ),
       ),
-      SizedBox(width: USizes.xs),
+    SizedBox(width: USizes.xs),
       Icon(
         Iconsax.verify5,
         color: UColors.primary,
