@@ -6,12 +6,15 @@ import 'package:e_commerce/common/widgets/icons/circular_icons.dart';
 import 'package:e_commerce/common/widgets/image/rounded_image.dart';
 import 'package:e_commerce/common/widgets/products/product_cards/product_card_horizontal.dart';
 import 'package:e_commerce/common/widgets/textfields/section_heading.dart';
+import 'package:e_commerce/features/authentication/shop/screen/All-Products/all_products.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 
 class UsubCatogories extends StatelessWidget {
   const UsubCatogories({super.key});
@@ -28,7 +31,7 @@ class UsubCatogories extends StatelessWidget {
         child: Padding(
           padding: UPadding.screenPadding,
           child: Column(children: [
-            USectionHeading(title: "Sports Shoe", onPressed: () {}),
+            USectionHeading(title: "Sports Shoes", onPressed: () => Get.to(() => UAllProductScreen()),),
             SizedBox(height: USizes.spaceBtwItems / 2),
             // Left side
             SizedBox(

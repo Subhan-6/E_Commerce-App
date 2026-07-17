@@ -11,14 +11,18 @@ class UOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // app bar
       appBar: UAppBar(
         title: Text("My Orders"),
         showBackArrow: true,
       ),
+      // body
 body: Padding(
   padding: UPadding.screenPadding,
   child: Column(children: [
-    Expanded(child: UOrderList()),
+    Expanded(
+      // order list
+      child: UOrderList()),
   ],),
 )
 

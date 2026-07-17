@@ -1,11 +1,14 @@
 import 'package:e_commerce/common/widgets/Brand_Card/brand_card.dart';
 import 'package:e_commerce/common/widgets/appbar/tabbar.dart';
 import 'package:e_commerce/common/widgets/textfields/section_heading.dart';
+import 'package:e_commerce/features/authentication/shop/screen/Brands/all_brands.dart' show UAllBrandsScreen;
 import 'package:e_commerce/features/authentication/shop/screen/store/widgets/category_tab.dart';
 import 'package:e_commerce/features/authentication/shop/screen/store/widgets/store_header.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helpers_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart' show GetNavigation;
+import 'package:get/get_core/src/get_main.dart';
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
 
@@ -36,7 +39,7 @@ class StoreScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             //Brands Section Heading
-                            USectionHeading(title: 'Brands', onPressed: () {}),
+                            USectionHeading(title: 'Brands', onPressed: ()=>Get.to(()=>UAllBrandsScreen(),)),
                             //Brands containear
                             SizedBox(
                               height: 70.0,

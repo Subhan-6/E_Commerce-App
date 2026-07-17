@@ -8,35 +8,41 @@ import 'package:flutter/material.dart';
 
 class UBrandCard extends StatelessWidget {
   const UBrandCard({
-    super.key, this.showBorder=true,
+    super.key,
+     this.showBorder=true,
+     this.onTap,
   });
-final showBorder;
+final bool showBorder;
+ final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
-    return URoundedContainer(
+    return GestureDetector(
+      onTap: onTap ,
+      child: URoundedContainer(
+        
+        height: USizes.brandCardHeight,
+         showBorder: showBorder,
+        backgroundColor: Colors.transparent,
+        padding: const EdgeInsets.all(USizes.sm),
+        child: Row(
+          children: [
+            // brand image
+            Flexible(child: URoundedImages(imageUrl: UImages.bata,)),
+            SizedBox(width: USizes.spaceBtwItems/2),
+            // brad name & vrify icon
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  UBrand_title_with_verify(title: 'Bata',brandTextSize: TextSizes.large),
+                  Text('172 Products',style: Theme.of(context).textTheme.labelSmall,overflow: TextOverflow.ellipsis,)
+                ],
+              ),
+            )
       
-      height: USizes.brandCardHeight,
-       showBorder: showBorder,
-      backgroundColor: Colors.transparent,
-      padding: const EdgeInsets.all(USizes.sm),
-      child: Row(
-        children: [
-          // brand image
-          Flexible(child: URoundedImages(imageUrl: UImages.bata,)),
-          SizedBox(width: USizes.spaceBtwItems/2),
-          // brad name & vrify icon
-          Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                UBrand_title_with_verify(title: 'Bata',brandTextSize: TextSizes.large),
-                Text('172 Products',style: Theme.of(context).textTheme.labelSmall,overflow: TextOverflow.ellipsis,)
-              ],
-            ),
-          )
-    
-      ],),
+        ],),
+      ),
     );
   }
 }

@@ -21,9 +21,7 @@ final Widget Function(BuildContext, int index) itemBuilder;
       mainAxisSpacing: USizes.gridViewSpacing,
       mainAxisExtent: mainAxisExtent,
       ), 
-      itemBuilder: (context, index) {
-        return UProductCard();
-      },);
+      itemBuilder:  itemBuilder,);
   }
 }
 

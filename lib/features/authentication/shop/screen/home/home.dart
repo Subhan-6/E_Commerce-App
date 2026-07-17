@@ -4,6 +4,7 @@ import 'package:e_commerce/common/widgets/products/product_cards/product_card_ve
 import 'package:e_commerce/common/widgets/textfields/search_bar.dart';
 import 'package:e_commerce/common/widgets/textfields/section_heading.dart';
 import 'package:e_commerce/features/authentication/shop/controllers/home_controller/home_controller.dart';
+import 'package:e_commerce/features/authentication/shop/screen/All-Products/all_products.dart';
 import 'package:e_commerce/features/authentication/shop/screen/home/widgets/home_appbar.dart';
 import 'package:e_commerce/features/authentication/shop/screen/home/widgets/home_categories.dart';
 import 'package:e_commerce/features/authentication/shop/screen/home/widgets/upromo_banners.dart';
@@ -54,7 +55,7 @@ final controller = Get.put(HomeController());
                 UpromoBanners(banners: [UImages.banner1,UImages.banner3,UImages.banner4,UImages.banner5,UImages.banner6],),
                 SizedBox(height: USizes.spaceBtwItems),
                 // section heading
-                USectionHeading(title: 'Popular Products' , onPressed: (){}, ),
+                USectionHeading(title: 'Popular Products' , onPressed: () => Get.to(() => UAllProductScreen()),),
                 SizedBox(height: USizes.spaceBtwItems/2),
                 // product grid & product card
                 UGridLayout(
